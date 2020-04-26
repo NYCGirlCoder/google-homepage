@@ -1,0 +1,188 @@
+
+body { 
+    font-family: Arial, sans-serif;
+  }
+  
+  /* CSS for CSS Grid */
+  
+  #container {
+    font-size: 13px;
+    min-height: 730px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 140px 50px 50px 1fr;
+    grid-gap: 10px 10px;
+    grid-template-areas:
+      "header"
+      "logo"
+      "search"
+      "button"
+      "footer"
+  }
+  
+  @media (min-width: 700px) {
+    .container {
+      grid-template-columns:  2fr 3fr 2fr;
+      grid-template-rows: 1fr 140px 50px 50px 1fr;
+    }
+  }
+  
+  /* CSS for Header section */
+  
+  #grid1 {
+    display: grid;
+    grid-area: header;
+    grid-teamplate-columns: 1fr 1fr;
+    grid-template-areas:
+      "header1 header2 header3"
+  }
+  
+  .header1 {
+    grid-area: header1;
+    justify-self: start;
+    margin: 5px 20px;
+  }
+  
+  .header3 {
+    grid-area: header3;
+    justify-self: end;
+    margin: 5px 20px;
+  }
+  
+  li {
+    display: inline;
+  }
+  
+  li a {
+    text-decoration: none;
+    color: #4D4D4D;
+    margin: 0 10px;
+  }
+  
+  li a:hover {
+    text-decoration: underline;
+  }
+  
+  .header2 {
+    grid-area: header2;
+    justify-self: center;
+    margin: -10px 0;
+  }
+  
+  p {
+    font-size: 12px;
+    font-weight: bold;
+    color: #A0A0A0;
+  }
+  
+  .button1 {
+    width: 70px;
+    height: 30px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #6194FF;
+    border: none;
+  }
+  
+  /* CSS for Google Logo */
+  
+  .logo {
+    grid-area: logo;
+    justify-self: center;
+    align-self: center;
+  }
+  
+  img {
+    display: block;
+    margin: 0;
+    width: 280px;
+  }
+  
+  /* CSS for Search Box */
+  
+  .search {
+    grid-area: search;
+    justify-self: center;
+  }
+  
+  input {
+    width: 600px;
+    height: 75%;
+    border-radius: 20px;
+    border-color: #CECECE;
+    border-style: solid;
+    border-width: thin;
+  }
+  
+  input:hover {
+    box-shadow: 0px 1px 8px #D0D0D0;
+    border: none;
+  }
+  
+  /* CSS for Google Search and I'm Feeling Lucky buttons */
+  
+  .button2 {
+    grid-area: button;
+    justify-self: center;
+    align-self: end;
+  }
+  
+  .button3 {
+    font-size: 13px;
+    color: #505050;
+    background-color: #F0F0F0;
+    width: 130px; 
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  .button3:hover {
+    font-size: 13px;
+    color: #000000;
+    background-color: #F6F6F6;
+    border: solid;
+    border-width: thin;
+    border-color: #AAAAAA;
+  }
+  
+  /* CSS for Footer section */
+  
+  #grid2 {
+    display: grid;
+    background-color: #F0F0F0;
+    grid-area: footer;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "footer1 footer2"
+  }
+  
+  .footer1 {
+    grid-area: footer1;
+    justify-self: start;
+    align-self: center;
+  }
+  
+  .footer2 {
+    grid-area: footer2;
+    justify-self: end;
+    align-self: center;
+  }
+  
+  .footer3 {
+    padding: 12px 20px;
+  }
+  
+  ul {
+    background-color: #F0F0F0;
+    border: solid;
+    border-width: thin;
+    border-color: #E0E0E0;
+  }
+  
+  li a{
+    font-size: 13px;
+  }
